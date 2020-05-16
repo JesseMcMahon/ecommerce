@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 50px;
+  padding-bottom: 200px;
+}
+
+.product {
+  background-color: #ddd;
+  border-radius: 15px;
+  position: relative;
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  padding: 10px 0;
+
+  img {
+    height: 300px;
+  }
+}
+
+.addToCart {
+  position: absolute;
+  width: 100%;
+  background-color: royalblue;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.product:hover .addToCart {
+  bottom: 60px;
+  left: 0;
+  opacity: 1;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}

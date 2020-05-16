@@ -1,0 +1,60 @@
+header {
+  background-image: url("https://images.unsplash.com/photo-1511804472014-fa7b871cd6a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 60px 0 60px;
+  color: #fff;
+
+  h2 {
+    letter-spacing: 1px;
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      padding: 5px;
+    }
+  }
+}
+
+.cart {
+  ion-icon {
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: 5px;
+  }
+
+  a {
+    background-color: royalblue;
+  }
+}
+
+.overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(10, 10, 10, 0.3);
+}

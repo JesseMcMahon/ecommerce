@@ -1,30 +1,39 @@
-import { ADD_PRODUCT_TO_CART, GET_CART_TOTAL } from "../actions/types";
+import {
+  ADD_PRODUCT_TO_CART,
+  GET_CART_TOTAL,
+  INCREASE_QUANTITY,
+  DECREASE_QUANTITY,
+} from "../actions/types";
 
 const initialState = {
   cartTotal: 0,
   cartTotalCost: 0,
   products: {
-    greyTShirt: {
+    greyTshirt: {
       name: "Grey T-shirt",
-      price: 35.0,
+      tagName: "greyTshirt",
+      price: 35,
       amount: 0,
       inCart: false,
     },
-    blackTShirt: {
+    blackTshirt: {
       name: "Black T-shirt",
-      price: 35.0,
+      tagName: "blackTshirt",
+      price: 35,
       amount: 0,
       inCart: false,
     },
-    whiteTShirt: {
+    whiteTshirt: {
       name: "White T-shirt",
-      price: 35.0,
+      tagName: "whiteTshirt",
+      price: 35,
       amount: 0,
       inCart: false,
     },
-    blueTShirt: {
+    blueTshirt: {
       name: "Blue T-shirt",
-      price: 35.0,
+      tagName: "blueTshirt",
+      price: 35,
       amount: 0,
       inCart: false,
     },
@@ -32,23 +41,58 @@ const initialState = {
 };
 
 export default (state = initialState, action) => {
+  let productSelected = {};
   switch (action.type) {
     case ADD_PRODUCT_TO_CART:
-      let addQuantity = { ...state.products[action.payload] };
-      addQuantity.amount += 1;
-      addQuantity.inCart = true;
+      productSelected = { ...state.products[action.payload] };
+      productSelected.amount += 1;
+      productSelected.inCart = true;
+
       return {
         ...state,
-        cartTotalCost: state.cartTotal + state.products[action.payload].price,
+        cartTotal: state.cartTotal + 1,
+        cartTotalCost:
+          state.cartTotalCost + state.products[action.payload].price,
         products: {
           ...state.products,
-          [action.payload]: addQuantity,
+          [action.payload]: productSelected,
         },
-        cartTotal: state.cartTotal + 1,
       };
     case GET_CART_TOTAL:
       return {
         ...state,
+      };
+    case INCREASE_QUANTITY:
+      productSelected = { ...state.products[action.payload] };
+      productSelected.amount += 1;
+      return {
+        ...state,
+        cartTotalCost:
+          state.cartTotalCost + state.products[action.payload].price,
+        products: {
+          ...state.proucts,
+          [action.payload]: productSelected,
+        },
+      };
+    case DECREASE_QUANTITY:
+      productSelected = { ...state.products[action.payload] };
+      let newCartCost = 0;
+      if (productSelected.amount === 0) {
+        productSelected.amount = 0;
+        newCartCost = state.cartTotalCost;
+      } else {
+        productSelected.amount -= 1;
+        newCartCost =
+          state.cartTotalCost - state.products[action.payload].price;
+      }
+
+      return {
+        ...state,
+        cartTotalCost: newCartCost,
+        products: {
+          ...state.proucts,
+          [action.payload]: productSelected,
+        },
       };
     default:
       return state;

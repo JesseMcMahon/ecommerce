@@ -1,4 +1,5 @@
-.container {
+.container,
+.container-products {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -8,7 +9,8 @@
 }
 
 .product {
-  background-color: #ddd;
+  background-color: #fff;
+  border: 2px solid #ccc;
   border-radius: 15px;
   position: relative;
   text-align: center;

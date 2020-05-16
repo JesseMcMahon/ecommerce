@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import getCartTotal from "../../actions/getAction";
 
 const Header = (props) => {
-  console.log(props);
   useEffect(() => {
     getCartTotal();
   }, []);

@@ -1,8 +1,8 @@
 header {
-  background-image: url("https://images.unsplash.com/photo-1511804472014-fa7b871cd6a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background: #62c0ff;
   background-repeat: no-repeat;
   background-position: center;
-  height: 150px;
+  height: 120px;
   position: relative;
 }
 
@@ -32,6 +32,10 @@ nav {
       color: #fff;
       padding: 5px;
     }
+
+    a:hover {
+      border-bottom: 1px solid #333;
+    }
   }
 }
 
@@ -43,7 +47,7 @@ nav {
   }
 
   a {
-    background-color: royalblue;
+    background-color: #333;
   }
 }
 

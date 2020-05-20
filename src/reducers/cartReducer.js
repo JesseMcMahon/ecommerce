@@ -70,7 +70,7 @@ export default (state = initialState, action) => {
         cartTotalCost:
           state.cartTotalCost + state.products[action.payload].price,
         products: {
-          ...state.proucts,
+          ...state.products,
           [action.payload]: productSelected,
         },
       };
@@ -90,7 +90,7 @@ export default (state = initialState, action) => {
         ...state,
         cartTotalCost: newCartCost,
         products: {
-          ...state.proucts,
+          ...state.products,
           [action.payload]: productSelected,
         },
       };

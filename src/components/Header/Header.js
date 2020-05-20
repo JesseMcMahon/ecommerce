@@ -13,12 +13,12 @@ const Header = (props) => {
       <header>
         <div className="overlay"></div>
         <nav>
-          <h2>Shop</h2>
+          <h2 className="sm-hide">Shop</h2>
           <ul>
-            <li>
+            <li className="sm-hide">
               <Link to="/">Home</Link>
             </li>
-            <li>
+            <li className="sm-hide">
               <Link to="/about">About</Link>
             </li>
             <li className="cart">

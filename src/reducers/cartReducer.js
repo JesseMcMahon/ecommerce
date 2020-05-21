@@ -3,6 +3,7 @@ import {
   GET_CART_TOTAL,
   INCREASE_QUANTITY,
   DECREASE_QUANTITY,
+  REMOVE_PRODUCT_FROM_CART,
 } from "../actions/types";
 
 const initialState = {
@@ -71,6 +72,14 @@ const initialState = {
 export default (state = initialState, action) => {
   let productSelected = {};
   switch (action.type) {
+    case REMOVE_PRODUCT_FROM_CART:
+      productSelected = { ...state.products[action.payload] };
+      productSelected.inCart = false;
+
+      return {
+        ...state,
+      };
+
     case ADD_PRODUCT_TO_CART:
       productSelected = { ...state.products[action.payload] };
       productSelected.amount += 1;

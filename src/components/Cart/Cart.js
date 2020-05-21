@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { connect } from "react-redux";
 import { productQuantity } from "../../actions/productQuantity";
+import removeFromCart from "../../actions/removeAction";
 import californiaBlack from "../../images/californiaBlack.jpg";
 import californiaBlue from "../../images/californiaBlue.jpg";
 import californiaGold from "../../images/californiaGold.jpg";
@@ -43,7 +44,6 @@ const Cart = ({ cartProps, productQuantity }) => {
     return (
       <Fragment key={index}>
         <div className="cart-product">
-          <ion-icon name="close-circle"></ion-icon>
           <img src={productImages(item)} alt="shirt" />
           <span className="sm-hide">{item.name}</span>
         </div>

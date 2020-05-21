@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import addToCart from "../../actions/addAction";
-import shirt from "./mock.png";
 import "./dashboard.scss";
 
 const Dashboard = (props) => {

@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+
 header {
-  background: #62c0ff;
+  background-image: url("https://images.unsplash.com/photo-1532667449560-72a95c8d381b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   background-repeat: no-repeat;
   background-position: center;
-  height: 120px;
+  height: 320px;
+  width: 100%;
   position: relative;
+  z-index: 2;
+  font-family: "El Messiri", sans-serif;
 }
 
 nav {
@@ -31,23 +36,26 @@ nav {
       text-decoration: none;
       color: #fff;
       padding: 5px;
+      font-size: 20px;
     }
 
     a:hover {
-      border-bottom: 1px solid #333;
+      border-bottom: 1px solid #9b0303;
     }
   }
 }
 
 .cart {
   ion-icon {
-    vertical-align: bottom;
-    font-size: 20px;
+    vertical-align: top;
+    font-size: 25px;
     padding-right: 5px;
   }
 
   a {
-    background-color: #333;
+    background-color: #9b0303;
+    border-radius: 5px;
+    color: #fff;
   }
 }
 

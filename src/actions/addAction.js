@@ -1,5 +1,4 @@
 import { ADD_PRODUCT_TO_CART } from "./types";
-import { bindActionCreators } from "redux";
 
 const addToCart = (productName) => {
   return (dispatch) => {

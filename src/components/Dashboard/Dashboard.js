@@ -9,10 +9,10 @@ const Dashboard = (props) => {
     <div className="container">
       <div className="product">
         <img
-          src="https://www.clothingshoponline.com/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/1/7/17924_f_fl.jpg"
+          src="https://cdn.shopify.com/s/files/1/0074/5432/6835/products/california-watch-co-hollywood-32-all-gunmetal_1800x1800.jpg?v=1588965003"
           alt="product 1"
         />
-        <h3>Grey T-Shirt</h3>
+        <h3>California (Black)</h3>
         <h2>$35.00</h2>
         <a
           onClick={() => props.addToCart("greyTshirt")}
@@ -24,10 +24,10 @@ const Dashboard = (props) => {
       </div>
       <div className="product">
         <img
-          src="https://www.clothingshoponline.com/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/1/7/17927_f_fl.jpg"
+          src="https://cdn.shopify.com/s/files/1/0074/5432/6835/products/california-watch-co-hollywood-32-deep-blue_1800x1800.jpg?v=1588965032"
           alt="product 1"
         />
-        <h3>Black T-Shirt</h3>
+        <h3>California (Blue)</h3>
         <h2>$35.00</h2>
         <a
           onClick={() => props.addToCart("blackTshirt")}
@@ -39,10 +39,10 @@ const Dashboard = (props) => {
       </div>
       <div className="product">
         <img
-          src="https://www.clothingshoponline.com/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/1/7/17904_f_fl.jpg"
+          src="https://cdn.shopify.com/s/files/1/0074/5432/6835/products/california-watch-co-hollywood-32-rose-gold-black_1800x1800.jpg?v=1588965007"
           alt="product 1"
         />
-        <h3>White T-Shirt</h3>
+        <h3>California (Rose Gold)</h3>
         <h2>$35.00</h2>
         <a
           onClick={() => props.addToCart("whiteTshirt")}
@@ -54,10 +54,70 @@ const Dashboard = (props) => {
       </div>
       <div className="product">
         <img
-          src="https://www.clothingshoponline.com/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/6/6/66724_f_fl.jpg"
+          src="https://cdn.shopify.com/s/files/1/0074/5432/6835/products/california-watch-co-hollywood-32-all-gold_1800x1800.jpg?v=1588965000"
           alt="product 1"
         />
-        <h3>Blue T-Shirt</h3>
+        <h3>California (Gold)</h3>
+        <h2>$35.00</h2>
+        <a
+          onClick={() => props.addToCart("blueTshirt")}
+          className="addToCart"
+          href="#"
+        >
+          Add to Cart
+        </a>
+      </div>
+      <div className="product">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0074/5432/6835/products/Autodromo-GroupB-Series2-Safari_Front_1800x1800.jpg?v=1584993315"
+          alt="product 1"
+        />
+        <h3>Autodromo</h3>
+        <h2>$35.00</h2>
+        <a
+          onClick={() => props.addToCart("blueTshirt")}
+          className="addToCart"
+          href="#"
+        >
+          Add to Cart
+        </a>
+      </div>
+      <div className="product">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0074/5432/6835/products/xeric-cypher-automatic-black-yellow__18063.1559236165.1280.1280_1800x1800.jpg?v=1571443844"
+          alt="product 1"
+        />
+        <h3>Xeric Cypher</h3>
+        <h2>$35.00</h2>
+        <a
+          onClick={() => props.addToCart("blueTshirt")}
+          className="addToCart"
+          href="#"
+        >
+          Add to Cart
+        </a>
+      </div>
+      <div className="product">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0074/5432/6835/products/california-watch-co-hollywood-32-all-gold_1800x1800.jpg?v=1588965000"
+          alt="product 1"
+        />
+        <h3>California (Gold)</h3>
+        <h2>$35.00</h2>
+        <a
+          onClick={() => props.addToCart("blueTshirt")}
+          className="addToCart"
+          href="#"
+        >
+          Add to Cart
+        </a>
+      </div>
+      <div className="product">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0074/5432/6835/products/california-watch-co-hollywood-32-all-gold_1800x1800.jpg?v=1588965000"
+          alt="product 1"
+        />
+        <h3>California (Gold)</h3>
         <h2>$35.00</h2>
         <a
           onClick={() => props.addToCart("blueTshirt")}

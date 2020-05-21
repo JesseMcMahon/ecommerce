@@ -13,9 +13,9 @@ const Dashboard = (props) => {
           alt="product 1"
         />
         <h3>California (Black)</h3>
-        <h2>$35.00</h2>
+        <h2>$249</h2>
         <a
-          onClick={() => props.addToCart("greyTshirt")}
+          onClick={() => props.addToCart("californiaBlack")}
           className="addToCart"
           href="#"
         >
@@ -28,9 +28,9 @@ const Dashboard = (props) => {
           alt="product 1"
         />
         <h3>California (Blue)</h3>
-        <h2>$35.00</h2>
+        <h2>$249</h2>
         <a
-          onClick={() => props.addToCart("blackTshirt")}
+          onClick={() => props.addToCart("californiaBlue")}
           className="addToCart"
           href="#"
         >
@@ -42,10 +42,10 @@ const Dashboard = (props) => {
           src="https://cdn.shopify.com/s/files/1/0074/5432/6835/products/california-watch-co-hollywood-32-rose-gold-black_1800x1800.jpg?v=1588965007"
           alt="product 1"
         />
-        <h3>California (Rose Gold)</h3>
-        <h2>$35.00</h2>
+        <h3>California (Rose)</h3>
+        <h2>$249</h2>
         <a
-          onClick={() => props.addToCart("whiteTshirt")}
+          onClick={() => props.addToCart("californiaRoseGold")}
           className="addToCart"
           href="#"
         >
@@ -58,9 +58,9 @@ const Dashboard = (props) => {
           alt="product 1"
         />
         <h3>California (Gold)</h3>
-        <h2>$35.00</h2>
+        <h2>$249</h2>
         <a
-          onClick={() => props.addToCart("blueTshirt")}
+          onClick={() => props.addToCart("californiaGold")}
           className="addToCart"
           href="#"
         >
@@ -73,9 +73,9 @@ const Dashboard = (props) => {
           alt="product 1"
         />
         <h3>Autodromo</h3>
-        <h2>$35.00</h2>
+        <h2>$349</h2>
         <a
-          onClick={() => props.addToCart("blueTshirt")}
+          onClick={() => props.addToCart("autodromo")}
           className="addToCart"
           href="#"
         >
@@ -88,9 +88,9 @@ const Dashboard = (props) => {
           alt="product 1"
         />
         <h3>Xeric Cypher</h3>
-        <h2>$35.00</h2>
+        <h2>$199</h2>
         <a
-          onClick={() => props.addToCart("blueTshirt")}
+          onClick={() => props.addToCart("xericCypher")}
           className="addToCart"
           href="#"
         >
@@ -99,13 +99,13 @@ const Dashboard = (props) => {
       </div>
       <div className="product">
         <img
-          src="https://cdn.shopify.com/s/files/1/0074/5432/6835/products/california-watch-co-hollywood-32-all-gold_1800x1800.jpg?v=1588965000"
+          src="https://cdn.shopify.com/s/files/1/0074/5432/6835/products/xeric-evergraph-auto-gunmetal__66223.1512173711.1280.1280_1800x1800.jpg?v=1571440669"
           alt="product 1"
         />
-        <h3>California (Gold)</h3>
-        <h2>$35.00</h2>
+        <h3>Evergraph</h3>
+        <h2>$299</h2>
         <a
-          onClick={() => props.addToCart("blueTshirt")}
+          onClick={() => props.addToCart("xericEvergraph")}
           className="addToCart"
           href="#"
         >
@@ -114,13 +114,13 @@ const Dashboard = (props) => {
       </div>
       <div className="product">
         <img
-          src="https://cdn.shopify.com/s/files/1/0074/5432/6835/products/california-watch-co-hollywood-32-all-gold_1800x1800.jpg?v=1588965000"
+          src="https://cdn.shopify.com/s/files/1/0074/5432/6835/products/dufa-DF-9024-03__72571.1510337574.1280.1280_1800x1800.jpg?v=1571441660"
           alt="product 1"
         />
-        <h3>California (Gold)</h3>
-        <h2>$35.00</h2>
+        <h3>Dufa Alto</h3>
+        <h2>$650</h2>
         <a
-          onClick={() => props.addToCart("blueTshirt")}
+          onClick={() => props.addToCart("dufaAlto")}
           className="addToCart"
           href="#"
         >

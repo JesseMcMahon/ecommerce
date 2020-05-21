@@ -1,10 +1,14 @@
 import React, { Fragment } from "react";
 import { connect } from "react-redux";
 import { productQuantity } from "../../actions/productQuantity";
-import greyTshirt from "../../images/greyTshirt.jpg";
-import blackTshirt from "../../images/blackTshirt.jpg";
-import whiteTshirt from "../../images/whiteTshirt.jpg";
-import blueTshirt from "../../images/blueTshirt.jpg";
+import californiaBlack from "../../images/californiaBlack.jpg";
+import californiaBlue from "../../images/californiaBlue.jpg";
+import californiaGold from "../../images/californiaGold.jpg";
+import californiaRoseGold from "../../images/californiaRoseGold.jpg";
+import autodroma from "../../images/autodroma.jpg";
+import dufo from "../../images/watchDufo.jpg";
+import xericCypher from "../../images/xericCypher.jpg";
+import xericEvergraph from "../../images/xericEvergraph.jpg";
 
 const Cart = ({ cartProps, productQuantity }) => {
   let itemsInCart = [];
@@ -16,14 +20,22 @@ const Cart = ({ cartProps, productQuantity }) => {
   });
 
   const productImages = (product) => {
-    if (product.tagName === "greyTshirt") {
-      return greyTshirt;
-    } else if (product.tagName === "blackTshirt") {
-      return blackTshirt;
-    } else if (product.tagName === "whiteTshirt") {
-      return whiteTshirt;
-    } else if (product.tagName === "blueTshirt") {
-      return blueTshirt;
+    if (product.tagName === "californiaBlack") {
+      return californiaBlack;
+    } else if (product.tagName === "californiaBlue") {
+      return californiaBlue;
+    } else if (product.tagName === "californiaGold") {
+      return californiaGold;
+    } else if (product.tagName === "californiaRoseGold") {
+      return californiaRoseGold;
+    } else if (product.tagName === "autodromo") {
+      return autodroma;
+    } else if (product.tagName === "dufaAlto") {
+      return dufo;
+    } else if (product.tagName === "xericCypher") {
+      return xericCypher;
+    } else if (product.tagName === "xericEvergraph") {
+      return xericEvergraph;
     }
   };
 
@@ -56,12 +68,6 @@ const Cart = ({ cartProps, productQuantity }) => {
 
   return (
     <div className="container-products">
-      <div className="product-header">
-        <h5 className="product-title">PRODUCT</h5>
-        <h5 className="price sm-hide">PRICE</h5>
-        <h5 className="quantity">QUANTITY</h5>
-        <h5 className="total">TOTAL</h5>
-      </div>
       <div className="products">{itemsInCart}</div>
       <div className="cart-total-container">
         <h4 className="cart-total-title">Cart Total: </h4>

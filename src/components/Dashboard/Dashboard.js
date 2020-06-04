@@ -9,7 +9,7 @@ const Dashboard = (props) => {
       <div className="product">
         <img
           src="https://cdn.shopify.com/s/files/1/0074/5432/6835/products/california-watch-co-hollywood-32-all-gunmetal_1800x1800.jpg?v=1588965003"
-          alt="product 1"
+          alt="product-1"
         />
         <h3>California (Black)</h3>
         <h2>$249</h2>

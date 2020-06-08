@@ -56,7 +56,7 @@ const Dashboard = (props) => {
           src="https://cdn.shopify.com/s/files/1/0074/5432/6835/products/california-watch-co-hollywood-32-all-gold_1800x1800.jpg?v=1588965000"
           alt="product 1"
         />
-        <h3>California (Gold)</h3>
+        <h3>California Gold</h3>
         <h2>$249</h2>
         <a
           onClick={() => props.addToCart("californiaGold")}
